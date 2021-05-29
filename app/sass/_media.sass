@@ -1,0 +1,74 @@
+
+@media (max-width:1200px)
+    .container
+        width: 960px
+@media (max-width:992px)
+    .container
+        width: 700px
+    .main
+        &__wrap
+            grid-template-columns: 1fr
+            grid-template-rows: min-content 1fr
+            border-radius: 30px 30px 0px 0px
+        &__product
+            grid-column: 1
+            grid-row: 1
+        &__text
+            grid-column: 1
+            grid-row: 2
+@media (max-width:767px)
+    .container
+        width: 550px
+@media (max-width:576px)
+    .container
+        width: 100%
+    body
+        padding: $padding-vertical-sm 0px
+    .main
+        &__wrap
+            border-radius: 0px 0px 0px 0px
+            padding: 0px 20px
+        &__product
+            background-color: $white
+            display: flex
+            justify-content: center
+            margin-bottom: 33px
+            &::before
+                background-color: $primary
+                opacity: 1
+                width: 202px
+                height: 202px
+                top: 62%
+                left: 50%
+                transform: translate(-50%,-50%)
+            &::after
+                display: none
+            &-text
+                color: $text
+                &--name
+                    top: 40px
+                    left: 0px
+                &--type
+                    top: 40px
+                    right: 0px
+                    left: auto
+            &-img
+                margin: 120px 0px 32px 0px
+                width: 223px
+                height: 122px
+        &__text
+            grid-template-rows: min-content 1fr
+            &-title-wrap
+                background-color: $white
+                padding: 0
+    .form
+        padding: 28px 0px 28px 0px
+        grid-column-gap: 10px
+        &__field
+            &-input
+                padding: 16px 10px
+        &__btn-select
+            padding: 16px 10px
+    .footer
+        &__wrap
+            display: block

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduslim</title>
+    
+
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <div class="main__product">
+                    <span class="main__product-text main__product-text--name">Reduslim</span>
+                    <picture>
+                        <source srcset="img/main/pills-mb@1x.webp 1x,
+                                    img/main/pills-mb@2x.webp 2x"
+                                type="image/webp"
+                                media="(max-width:576px)">        
+                        <source srcset="img/main/pills@1x.webp 1x,
+                                img/main/pills@2x.webp 2x"
+                                type="image/webp">
+                        <img src="img/main/pills@1x.png"
+                            srcset="img/main/pills@2x.png 2x"
+                            alt="TEXT"
+                            class="main__product-img">
+                    </picture>
+                    <span class="main__product-text main__product-text--type">Eco</span>
+                </div>
+                <div class="main__text">
+                    <div class="main__text-title-wrap">
+                        <h1 class="main__text-title">
+                            Сделай шаг к выздоровлению
+                        </h1>
+                    </div>
+                    <form action="#" class="form">
+                        <div class="form__field form__field--name">
+                            <label for="input-name" class="form__field-label">Ваше <span class="form__field-label-span">имя</span></label>
+                            <input type="text" id="input-name" class="form__field-input" placeholder="Алексей" required>
+                        </div>
+                        <div class="form__field form__field--tel">
+                            <label for="input-tel" class="form__field-label">Ваш <span class="form__field-label-span">телефон</span></label>
+                            <input type="tel" data-tel-input  id="input-tel" class="form__field-input" placeholder="+7 (123) 456 78-90" maxlength="18" required>
+                        </div>
+                        <button class="form__btn-select" aria-label="Выберите страну">
+                            <span class="form__btn-select-text">RU</span>
+                            <img src="img/main/ru.jpg" alt="" class="form__btn-select-img">
+                            <svg class="form__btn-select-arrow">
+                                <use href="sprite.svg#select"></use>
+                            </svg>
+                        </button>
+
+                        <!-- Нативный селект -->
+                        <!-- <select name="" id="" class="form__btn-select">
+                            <option value="RU" class="form__btn-select-text">RU &#127479;&#127482;</option>
+                            <option value="UK" class="form__btn-select-text">UK &#127468;&#127463;</option>
+                            <option value="FR" class="form__btn-select-text">FR &#127464;&#127477;</option>     
+                        </select> -->
+                        <button type="submit" class="form__btn">
+                            <span class="form__btn-text">Заказать</span>
+                            <svg class="form__btn-img">
+                                <use href="sprite.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <h2 class="footer__title">
+                    <span >Trusted</span>
+                    <svg class="footer__img">
+                        <use href="sprite.svg#lock"></use>
+                    </svg>
+                    <span >Secure</span>
+                </h2>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
